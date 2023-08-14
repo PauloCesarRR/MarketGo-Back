@@ -19,11 +19,6 @@ public class Produto {
 	@Column(name = "nome_produto", length = 70, nullable = false)
 	private String nome;
 	
-	public Produto(Integer id, String nome) {
-		this.id = id;
-		this.nome = nome;
-	}
-	
 	public Integer getId() {
 		return id;
 	}

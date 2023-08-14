@@ -30,13 +30,12 @@ public class ItemLista {
 	@ManyToOne
 	@JoinColumn(name = "tbl_produto_id_produto")
 	private Produto produto;
-
 	
 	@ManyToOne
 	@JoinColumn(name = "tbl_lista_id_lista")
 	private Lista lista;
 
-
+	
 	public Integer getNumSeq() {
 		return numSeq;
 	}
