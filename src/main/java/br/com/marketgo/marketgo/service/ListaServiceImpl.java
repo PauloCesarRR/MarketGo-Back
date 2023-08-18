@@ -48,5 +48,4 @@ public class ListaServiceImpl implements IListaService{
 	public List<Lista> buscarTodas() {
 		return (List<Lista>) repo.findAll();
 	}
-
 }

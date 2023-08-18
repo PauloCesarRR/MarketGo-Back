@@ -46,12 +46,11 @@ public class ListaController {
 	}
 	
 	@PutMapping("/listas/{id}")
-	public ResponseEntity<Lista> alterarLista(@PathVariable Integer id) {
+	public ResponseEntity<Lista> fecharLista(@PathVariable Integer id) {
 		Lista res = service.fecharLista(id);
 		if(res != null) {
-			return ResponseEntity.status(201).body(res);
+			return ResponseEntity.ok(res);
 		}
-		
 		return ResponseEntity.badRequest().build();
 	}
 	
