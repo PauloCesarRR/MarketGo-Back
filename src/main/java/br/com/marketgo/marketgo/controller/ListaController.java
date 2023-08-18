@@ -26,7 +26,7 @@ public class ListaController {
 		return ResponseEntity.ok(service.buscarTodas());
 	}
 	
-	@GetMapping("/listas/{id")
+	@GetMapping("/listas/{id}")
 	public ResponseEntity<Lista> buscarPeloId(@PathVariable Integer id){
 		Lista res = service.buscarPorId(id);
 		if (res != null) {
